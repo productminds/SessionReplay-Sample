@@ -44,7 +44,6 @@ export function useSessionReplay() {
       try {
         switch (action) {
           case "start":
-            console.warn("Entro al start");
             if (!currentlyActive) {
               const success = await startSessionReplay(elementName)
               if (success) {
@@ -56,7 +55,6 @@ export function useSessionReplay() {
             break
 
           case "stop":
-            console.warn("Entro al stop");
             if (currentlyActive) {
               const success = await stopSessionReplay(elementName)
               if (success) {
@@ -68,7 +66,6 @@ export function useSessionReplay() {
             break
 
           case "toggle":
-            console.warn("Entro al toggle");
             if (currentlyActive) {
               const success = await stopSessionReplay(elementName)
               if (success) {
