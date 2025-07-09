@@ -292,6 +292,11 @@ When the form is submitted, we call the  `stopReplayOnInteraction` function, and
 **This Implementation assumes the user will only submit the form once on that session, as it won't be able to track a session replay again due to that state formFocused variable**
 
 ```
+State variable:
+const [formFocused, setFormFocused] = useState(false);
+
+... code ...
+
 <form
   className="space-y-4"
   onFocus={() => {
