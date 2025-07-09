@@ -134,7 +134,6 @@ export default function AboutPage() {
                     // Start recording when user focuses on the newsletter form
                     startReplayOnInteraction("newsletter_form_focus")
                     setFormFocused(true);
-                    console.log("Form focused got: ", formFocused);
                   }
                 }}
                 onSubmit={(e) => {
